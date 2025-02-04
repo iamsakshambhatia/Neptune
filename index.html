@@ -1,253 +1,254 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Neptune</title>
-    <!-- Spline Sans r-->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300..700&display=swap"
-      rel="stylesheet"
-    />
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Neptune</title>
+      <!-- Spline Sans r-->
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300..700&display=swap"
+        rel="stylesheet"
+      />
 
-    <!-- Inter -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <!-- <link rel="stylesheet" href="style.css" /> -->
-    <link rel="stylesheet" href="output.css" />
-  </head>
-  <body class="w-screen h-screen" flex>
-    <div class="container w-full h-full flex">
-      <div
-        class="sidebar flex flex-col p-[2.2rem] h-full w-[22rem] border-solid border-[#ebebeb] border-[0.03rem] bg-white">
-        <div class="neptuneMainLogo h-[3rem]">
-          <img src="Union.svg" alt="Main Logo" id="mainLogo" class="w-[10.5rem] h-[2rem]"/>
-        </div>
-
+      <!-- Inter -->
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet"
+      />
+      <!-- <link rel="stylesheet" href="style.css" /> -->
+      <link rel="stylesheet" href="output.css" />
+    </head>
+    <body class="max-w-full h-screen" flex>
+      <div class="container w-full h-full flex overflow-hidden">
         <div
-          class="profileMenu flex items-center justify-around w-full h-[4rem] border-[0.5px] border-solid border-[#B5BDCD] rounded-md">
-          <div class="profilemenuContent flex justify-between w-[67%]">
-            <img src="GroupLogo.svg" alt="logo" id="logo" />
-            <div id="profile" class="flex flex-col">
-              <span id="name" class="font-spline text-[1rem] text-black font-medium">Jessica Thompson</span>
-              <span id="userType" class="font-spline text-[0.75rem] text-[#626D82] font-medium">Primary User</span>
-            </div>
+          class="sidebar flex flex-col p-[2.2rem] h-full w-[22rem] border-solid border-[#ebebeb] border-[0.03rem] bg-white">
+          <div class="neptuneMainLogo h-[3rem]">
+            <img src="Union.svg" alt="Main Logo" id="mainLogo" class="w-[10.5rem] h-[2rem]"/>
           </div>
-          <img class="DropdownImg w-[1.187rem] h-[1.187rem]" src="iconright.svg" alt="Dropdown" id="dropDown" />
-        </div>
 
-        <div class="menu h-auto  flex flex-col pt-[1.5rem]">
-          <div id="home" class="HomeLogo flex items-center p-3">
-            <span>
-              <img src="home1.svg" alt="Home" id="homeLogo" />
-            </span>
-            <span class="menuText font-spline font-medium text-[1rem] text-[#626D82] pl-[1rem]" id="homeText">
-              <a class="nav-link text-inherit decoration-none" href="#">Home</a>
-            </span>
-          </div>
-          <div id="docs" class="DocsLogo flex items-center w-full p-3 bg-[#D3F7B5] rounded-md">
-            <span>
-              <img src="doc.svg" alt="Documents" id="docLogo" />
-            </span>
-            <span class="menuText font-spline font-medium text-[1rem] text-[#1F4451] pl-[1rem]" id="docText">
-              <a class="nav-link text-inherit decoration-none" href="#">Documents</a>
-            </span>
-          </div>
-          <div id="chat" class="ChatLogo flex items-center p-3">
-            <span>
-              <img src="chat.svg" alt="Chat" id="chatLogo" />
-            </span>
-            <span class="menuText font-spline font-medium text-[1rem] text-[#626D82] pl-[1rem]">
-              <a class="nav-link" href="#">Chat with Neptune</a>
-            </span>
-          </div>
-          <div id="help" class="HelpLogo flex items-center p-3">
-            <span>
-              <img src="help.svg" alt="Help" id="helpLogo" />
-            </span>
-            <span class="menuText font-spline font-medium text-[1rem] text-[#626D82] pl-[1rem]">
-              <a class="nav-link text-inherit decoration-none" href="#">Help</a>
-            </span>
-          </div>
-          <div id="setting" class="SettingsLogo flex items-center p-3">
-            <span>
-              <img src="settings.svg" alt="Settings" id="settingLogo" />
-            </span>
-            <span class="menuText font-spline font-medium text-[1rem] text-[#626D82] pl-[1rem]">
-              <a class="nav-link text-inherit decoration-none" href="#">Settings</a>
-            </span>
-          </div>
-        </div>
-
-        <div class="footerContact w-[92%] pt-[7rem] flex flex-col">
-          <img class="h-[2rem] w-[2rem]" src="phone.svg" alt="Phone" id="phone" />
-          <div class="description w-full flex flex-col pb-[1rem] pt-[1.2rem]">
-            <span class="font-spline text-[1.5rem] font-medium text-[#1F4451]" id="heading1">Having trouble?</span>
-            <span class="font-spline text-[1rem] font-medium text-[#626D82] " id="desc"
-              >Feel free to contact us and we will always help you through the
-              process.</span
-            >
-          </div>
-          <button class="font-spline text-[0.75rem] font-semibold bg-[#1F4451] w-[45%] rounded-md p-[0.6rem] text-white cursor-pointer" id="contactUs">Contact Us</button>
-        </div>
-      </div>
-      <div class="main h-full w-[calc(100%-22rem)] flex justify-center bg-[#f3f2f1] pt-[2rem]">
-        <div class="mainChild h-auto w-[90%] bg-[#f3f2f1] flex flex-col items-center gap-3">
-          <div class="headerInfo w-full flex justify-between ">
-            <div class="leftData flex flex-col w-[20rem]">
-              <div class="home flex">
-                <span class="font-spline text-[1rem] text-[#436D7C] font-medium" id="leftHome">Home</span>
-                <img class="h-[1.25rem] w-[1.25rem] pl-[0.88rem]" src="chevron-right.svg" alt="Right Arrow" id="rightArrow" />
-                <span class="font-spline text-[1rem] pl-[0.88rem] text-[#B5BDCD] font-normal" id="leftDocs">Documents</span>
+          <div
+            class="profileMenu flex items-center justify-around w-full h-[4rem] border-[0.5px] border-solid border-[#B5BDCD] rounded-md">
+            <div class="profilemenuContent flex justify-between w-[67%]">
+              <img src="GroupLogo.svg" alt="logo" id="logo" />
+              <div id="profile" class="flex flex-col">
+                <span id="name" class="font-spline text-[1rem] text-black font-medium">Jessica Thompson</span>
+                <span id="userType" class="font-spline text-[0.75rem] text-[#626D82] font-medium">Primary User</span>
               </div>
-              <div class="myDocs font-zin font-semibold text-[2.06rem] text-[#2A2A2A] ">My Documents</div>
             </div>
-            <div class="Data flex relative pt-[2rem]">
-              <input
-                type="text"
-                class="rightData border-solid  border-[0.03rem] border-[#B5BDCD] w-[19.18rem] rounded-md placeholder:font-spline placeholder:text-[16px] placeholder:font-normal pl-[1.06rem] placeholder:text-[#B5BDCD]"
-                placeholder="Search documents"
-              />
-              <img class="absolute h-[1.04rem] w-[1.04rem] top-[60%] left-[90%] cursor-pointer" src="search.svg" alt="Search" id="searchIcon" />
+            <img class="DropdownImg w-[1.187rem] h-[1.187rem] cursor-pointer" src="iconright.svg" alt="Dropdown" id="dropDown" />
+          </div>
+
+          <div class="menu h-auto  flex flex-col pt-[1.5rem]">
+            <div id="home" class="HomeLogo flex items-center p-3">
+              <span>
+                <img src="home1.svg" alt="Home" id="homeLogo" />
+              </span>
+              <span class="menuText font-spline font-[400] text-[1rem] text-[#626D82] pl-[1rem]" id="homeText">
+                <a class="nav-link text-inherit decoration-none" href="#">Home</a>
+              </span>
+            </div>
+            <div id="docs" class="DocsLogo flex items-center w-full p-3 bg-[#D3F7B5] rounded-md">
+              <span>
+                <img src="doc.svg" alt="Documents" id="docLogo" />
+              </span>
+              <span class="menuText font-spline font-[400] text-[1rem] text-[#1F4451] pl-[1rem]" id="docText">
+                <a class="nav-link text-inherit decoration-none" href="#">Documents</a>
+              </span>
+            </div>
+            <div id="chat" class="ChatLogo flex items-center p-3">
+              <span>
+                <img src="chat.svg" alt="Chat" id="chatLogo" />
+              </span>
+              <span class="menuText font-spline font-[400] text-[1rem] text-[#626D82] pl-[1rem]">
+                <a class="nav-link" href="#">Chat with Neptune</a>
+              </span>
+            </div>
+            <div id="help" class="HelpLogo flex items-center p-3">
+              <span>
+                <img src="help.svg" alt="Help" id="helpLogo" />
+              </span>
+              <span class="menuText font-spline font-[400] text-[1rem] text-[#626D82] pl-[1rem]">
+                <a class="nav-link text-inherit decoration-none" href="#">Help</a>
+              </span>
+            </div>
+            <div id="setting" class="SettingsLogo flex items-center p-3">
+              <span>
+                <img src="settings.svg" alt="Settings" id="settingLogo" />
+              </span>
+              <span class="menuText font-spline font-[400] text-[1rem] text-[#626D82] pl-[1rem]">
+                <a class="nav-link text-inherit decoration-none" href="#">Settings</a>
+              </span>
             </div>
           </div>
-          <div class="tableInfo h-auto w-full bg-white">
-            <table class="docTable border-collapse">
-              <tr class="headings border-b-[0.0625rem] border-solid border-[#e8ecf1] h-[3.5rem] text-left">
-                <th class="checks w-[5rem] flex h-[3.5rem] items-center gap-2 justify-center">
-                  <input type="checkbox" class="checkBox h-[1.0625rem] w-[1.0625rem] pl-[1.75rem] border-
-                  [0.093rem] border-solid border-[#bababa] bg-white" />
-                  <img src="iconright.svg" alt="Down Arrow" id="" />
-                </th>
-                <th id="docName" class="headingText font-spline font-semibold text-[1rem] text-[#2A2A2A] w-[25.93rem] ">Document Name</th>
-                <th id="status" class="headingText font-spline font-semibold text-[1rem] text-[#2A2A2A] w-[14.8rem]">Status</th>
-                <th id="modified" class="headingText font-spline font-semibold text-[1rem] text-[#2A2A2A] w-[10.43rem]">Last Modified</th>
-                <th id="empty"></th>
-              </tr>
-  
-              <tr class="data1 border-b-[0.0625rem] border-solid border-[#e8ecf1] h-[5.625rem]">
-                <td class="flex items-center justify-center h-[5.625rem]">
-                  <input type="checkbox" name="checkdata" class="ch h-[1.0625rem] w-[1.0625rem]" />
-                </td>
-                <td class="dn font-spline font-semibold text-[1rem] text-[#436d7c]">Title of Document Goes Here</td>
-                <td>
-                  <span class="status needsign flex justify-start font-inter text-[1rem] rounded-[22px] bg-[#436d7c] w-[58%] h-[28%] text-white py-[3.5px] px-[8px] pl-[17.11px]"> Need Signing </span>
-                </td>
-                <td class="date h-[5.625rem] w-[83.8%] flex flex-col justify-center">
-                  <span class="date1"> 10/22/2024 </span>
-                  <span class="time"> 2:01 pm </span>
-                </td>
-                <td class="action h-[5.625rem] w-[17%] relative">
-                  <button class="btn font-inter font-medium text-[0.875rem] text-[#626d82] w-[8.375rem] h-[2.125rem] border border-[#b5bdcd] rounded-[0.3125rem] bg-white cursor-pointer">Sign Now</button>
-                  <img class="w-[0.56rem] h-[1rem] absolute top-[42%] transform -translate-y-1/ right-[10%]" src="dot.svg" alt="Dots" />
-                </td>
-              </tr>
-  
-              <tr class="data2 border-b-[0.0625rem] border-solid border-[#e8ecf1] h-[5.625rem]">
-                <td class="flex items-center justify-center h-[5.625rem">
-                  <input type="checkbox" name="checkdata" class="ch h-[1.0625rem] w-[1.0625rem] pl-[1.75rem] border-[0.093rem] border-solid border-[#bababa] bg-white" />
-                </td>
-                <td class="dn font-spline font-semibold text-[1rem] text-[#436d7c]">Title of Document Goes Here</td>
-                <td>
-                  <span class="status pend flex justify-start font-inter text-[1rem] w-[35.8%] h-[28%] rounded-[1.375rem] py-[3.5px] px-[8.55px] pl-[10.63px] text-[#626d82] bg-[#e8ecf1]">Pending</span>
-                  <span class="status wait flex justify-start font-inter text-[1rem] italic font-medium  text-[#b5bdcd] pt-[0.375rem]"
-                    > <span>Waiting for</span> <span class="text-[#436d7c]"> 1 person</span></span
-                  >
-                </td>
-                <td class="date h-[5.625rem] w-[83.8%] flex flex-col justify-center">
-                  <span class="date1"> 10/22/2024 </span>
-                  <span class="time"> 2:01 pm </span>
-                </td>
-                <td class="action h-[5.625rem] w-[17%] relative">
-                  <button class="btn font-inter font-medium text-[0.875rem] text-[#626d82] w-[8.375rem] h-[2.125rem] border border-[#b5bdcd] rounded-[0.3125rem] bg-white cursor-pointer">Preview</button>
-                  <img class="w-[0.56rem] h-[1rem] absolute top-[42%] transform -translate-y-1/ right-[10%]" src="dot.svg" alt="Dots" />
-                </td>
-              </tr>
-  
-              <tr class="data3 border-b-[0.0625rem] border-solid border-[#e8ecf1] h-[5.625rem]">
-                <td class="flex items-center justify-center h-[5.625rem">
-                  <input type="checkbox" name="checkdata" class="ch h-[1.0625rem] w-[1.0625rem] pl-[1.75rem] border-[0.093rem] border-solid border-[#bababa] bg-white" />
-                </td>
-                <td class="dn font-spline font-semibold text-[1rem] text-[#436d7c]">Title of Document Goes Here</td>
-                <td>
-                  <span class="status pend flex justify-start font-inter text-[1rem] w-[35.8%] h-[28%] rounded-[1.375rem] py-[3.5px] px-[8.55px] pl-[10.63px] text-[#626d82] bg-[#e8ecf1]">Pending</span>
-                  <span class="status wait flex justify-start font-inter text-[1rem] italic font-medium  text-[#b5bdcd] pt-[0.375rem]"
-                    >Waiting for <span class="text-[#436d7c]">2 persons</span></span
-                  >
-                </td>
-                <td class="date h-[5.625rem] w-[83.8%] flex flex-col justify-center">
-                  <span class="date1"> 10/22/2024 </span>
-                  <span class="time"> 2:01 pm </span>
-                </td>
-                <td class="action h-[5.625rem] w-[17%] relative">
-                  <button class="btn font-inter font-medium text-[0.875rem] text-[#626d82] w-[8.375rem] h-[2.125rem] border border-[#b5bdcd] rounded-[0.3125rem] bg-white cursor-pointer">Preview</button>
-                  <img class="w-[0.56rem] h-[1rem] absolute top-[42%] transform -translate-y-1/ right-[10%]" src="dot.svg" alt="Dots" />
-                </td>
-              </tr>
-  
-              <tr class="data4 border-b-[0.0625rem] border-solid border-[#e8ecf1] h-[5.625rem]">
-                <td class="flex items-center justify-center h-[5.625rem">
-                  <input type="checkbox" name="checkdata" class="ch h-[1.0625rem] w-[1.0625rem] pl-[1.75rem] border-[0.093rem] border-solid border-[#bababa] bg-white" />
-                </td>
-                <td class="dn font-spline font-semibold text-[1rem] text-[#436d7c]">Title of Document Goes Here</td>
-                <td>
-                  <span class="status comp flex justify-start font-inter text-[1rem] w-[44.3%] h-[28%] rounded-[1.375rem] py-[3.5px] px-[10.56px] pl-[10.66px] text-[#1f4451] bg-[#d3f7b5]">Completed</span>
-                </td>
-                <td class="date h-[5.625rem] w-[83.8%] flex flex-col justify-center">
-                  <span class="date1">10/22/2024</span>
-                  <span class="time">2:01 pm</span>
-                </td>
-                <td class="action h-[5.625rem] w-[17%] relative">
-                  <button class="btn font-inter font-medium text-[0.875rem] text-[#626d82] w-[8.375rem] h-[2.125rem] border border-[#b5bdcd] rounded-[0.3125rem] bg-white cursor-pointer">Download PDF</button>
-                  <img class="w-[0.56rem] h-[1rem] absolute top-[42%] transform -translate-y-1/ right-[10%]" src="dot.svg" alt="Dots" />
-                </td>
-              </tr>
-  
-              <tr class="data5 border-b-[0.0625rem] border-solid border-[#e8ecf1] h-[5.625rem]">
-                <td class="flex items-center justify-center h-[5.625rem]">
-                  <input type="checkbox" name="checkdata" class="ch h-[1.0625rem] w-[1.0625rem] pl-[1.75rem] border-[0.093rem] border-solid border-[#bababa] bg-white" />
-                </td>
-                <td class="dn font-spline font-semibold text-[1rem] text-[#436d7c]">Title of Document Goes Here</td>
-                <td>
-                  <span class="status comp flex justify-start font-inter text-[1rem] w-[44.3%] h-[28%] rounded-[1.375rem] py-[3.5px] px-[10.56px] pl-[10.66px] text-[#1f4451] bg-[#d3f7b5]">Completed</span>
-                </td>
-                <td class="date h-[5.625rem] w-[83.8%] flex flex-col justify-center">
-                  <span class="date1">10/22/2024</span>
-                  <span class="time">2:01 pm</span>
-                </td>
-                <td class="action h-[5.625rem] w-[17%] relative">
-                  <button class="btn font-inter font-medium text-[0.875rem] text-[#626d82] w-[8.375rem] h-[2.125rem] border border-[#b5bdcd] rounded-[0.3125rem] bg-white cursor-pointer">Download PDF</button>
-                  <img class="w-[0.56rem] h-[1rem] absolute top-[42%] transform -translate-y-1/ right-[10%]" src="dot.svg" alt="Dots" />
-                </td>
-              </tr>
-  
-              <tr class="data6 border-b-[0.0625rem] border-solid border-[#e8ecf1] h-[5.625rem]">
-                <td class="flex items-center justify-center h-[5.625rem]">
-                  <input type="checkbox" name="checkdata" class="ch h-[1.0625rem] w-[1.0625rem] pl-[1.75rem] border-[0.093rem] border-solid border-[#bababa] bg-white" />
-                </td>
-                <td class="dn font-spline font-semibold text-[1rem] text-[#436d7c]">Title of Document Goes Here</td>
-                <td>
-                  <span class="status comp flex justify-start font-inter text-[1rem] w-[44.3%] h-[28%] rounded-[1.375rem] py-[3.5px] px-[10.56px] pl-[10.66px] text-[#1f4451] bg-[#d3f7b5]">Completed</span>
-                </td>
-                <td class="date h-[5.625rem] w-[83.8%] flex flex-col justify-center">
-                  <span class="date1">10/22/2024</span>
-                  <span class="time">2:01 pm</span>
-                </td>
-                <td class="action h-[5.625rem] w-[17%] relative">
-                  <button class="btn font-inter font-medium text-[0.875rem] text-[#626d82] w-[8.375rem] h-[2.125rem] border border-[#b5bdcd] rounded-[0.3125rem] bg-white cursor-pointer"">Download PDF</button>
-                  <img class="w-[0.56rem] h-[1rem] absolute top-[42%] transform -translate-y-1/ right-[10%]" src="dot.svg" alt="Dots" />
-                </td>
-              </tr>
-            </table>
+
+          <div class="footerContact w-[100%] pt-[7rem] flex flex-col">
+            <img class="h-[2rem] w-[2rem]" src="phone.svg" alt="Phone" id="phone" />
+            <div class="description w-full flex flex-col pb-[1rem] pt-[1.2rem]">
+              <span class="font-spline text-[1.5rem] font-medium text-[#1F4451]" id="heading1">Having trouble?</span>
+              <span class="font-spline text-[1rem] font-[400] text-[#626D82]" id="desc">Feel free to contact us and we will always help you through the
+                process.</span 
+              >
+            </div>
+            <button class="font-spline text-[0.75rem] font-semibold bg-[#1F4451] w-[45%] rounded-md p-[0.6rem] text-white cursor-pointer" id="contactUs">Contact Us</button>
+          </div>
+        </div>
+        <!-- #f3f2f1 -->
+        <div class="main h-full flex-1 flex justify-center bg-[#f3f2f1] pt-[2rem]"> 
+          <div class="mainChild h-auto w-[90%] flex flex-col items-center gap-[2.25rem]">
+            <div class="headerInfo w-full flex justify-between">
+              <div class="leftData flex flex-col w-[20rem]">
+                <div class="home flex gap-4 ">
+                  <span class="font-spline text-[1rem] text-[#436D7C] font-medium" id="leftHome">Home</span>
+                  <img class="h-[1.25rem] w-[1.25rem]" src="chevron-right.svg" alt="Right Arrow" id="rightArrow" />
+                  <span class="font-spline text-[1rem] text-[#B5BDCD] font-normal" id="leftDocs">Documents</span>
+                </div>
+                <div class="myDocs font-zin font-semibold text-[2.06rem] text-[#2A2A2A] ">My Documents</div>
+              </div>
+              <div class="Data flex relative">
+                <input
+                  type="text"
+                  class="rightData border-solid  border-[0.03rem] border-[#B5BDCD] mt-[3.187rem] h-[2.937rem] w-[19.18rem] rounded-md placeholder:font-spline placeholder:text-[16px] placeholder:font-normal pl-[1.06rem] placeholder:text-[#B5BDCD]"
+                  placeholder="Search documents"
+                />
+                <img class="absolute h-[1.04rem] w-[1.04rem] top-[68%] left-[90%] cursor-pointer" src="search.svg" alt="Search" id="searchIcon" />
+              </div>
+            </div>
+            <div class="tableInfo h-auto w-full bg-white border border-solid border-[#B5BDCD] rounded-md">
+              <table class="docTable border-collapse ">
+                <tr class="headings border-b-[0.0625rem] border-solid border-[#e8ecf1] h-[3.5rem] text-left">
+                  <th class="checks w-[5rem] flex h-[3.5rem] items-center gap-2 justify-center">
+                    <input type="checkbox" class="checkBox h-[1.0625rem] w-[1.0625rem] pl-[1.75rem] border-
+                    [0.093rem] border-solid border-[#bababa] bg-white" />
+                    <img src="iconright.svg" alt="Down Arrow" id="" />
+                  </th>
+                  <th id="docName" class="headingText font-spline font-semibold text-[1rem] text-[#2A2A2A] w-[22.93rem] ">Document Name</th>
+                  <th id="status" class="headingText font-spline font-semibold text-[1rem] text-[#2A2A2A] w-[14.8rem]">Status</th>
+                  <th id="modified" class="headingText font-spline font-semibold text-[1rem] text-[#2A2A2A] w-[10.43rem]">Last Modified</th>
+                  <th id="empty"></th>
+                </tr>
+    
+                <tr class="data1 border-b-[0.0625rem] border-solid border-[#e8ecf1] h-[4rem]">
+                  <td class="items-center p-[1.15rem]">
+                    <input type="checkbox" name="checkdata" class="ch h-[1.0625rem] w-[1.0625rem]" />
+                  </td>
+                  <td class="dn font-spline font-semibold text-[1rem] text-[#436d7c]">Title of Document Goes Here</td>
+                  <td>
+                    <span class="status needsign flex justify-start font-inter text-[1rem] rounded-[22px] bg-[#436d7c] w-[58%] h-[28%] text-white py-[3.5px] px-[8px] pl-[17.11px]"> Need Signing </span>
+                  </td>
+                  <td class="date h-[4rem] w-[83.8%] flex flex-col justify-center">
+                    <span class="date1"> 10/22/2024 </span>
+                    <span class="time"> 2:01 pm </span>
+                  </td>
+                  <td class="action h-[4rem] w-[17%] relative">
+                    <button class="btn font-inter font-medium text-[0.875rem] text-[#626d82] w-[8.375rem] h-[2.125rem] border border-[#b5bdcd] rounded-[0.3125rem] bg-white cursor-pointer">Sign Now</button>
+                    <img class="w-[0.56rem] h-[1rem] absolute top-[40%] transform -translate-y-1/ right-[10%]" src="dot.svg" alt="Dots" />
+                  </td>
+                </tr>
+    
+                <tr class="data2 border-b-[0.0625rem] border-solid border-[#e8ecf1] h-[4rem]">
+                  <td class="items-center p-[1.15rem]">
+                    <input type="checkbox" name="checkdata" class="ch h-[1.0625rem] w-[1.0625rem] pl-[1.75rem] border-[0.093rem] border-solid border-[#bababa] bg-white" />
+                  </td>
+                  <td class="dn font-spline font-semibold text-[1rem] text-[#436d7c]">Title of Document Goes Here</td>
+                  <td>
+                    <span class="status pend font-inter text-[15px] font-medium text-center leading-[18.15px] text-[#626d82] w-[85px] h-[26px] rounded-[22px] bg-[#e8ecf1] flex items-center justify-center">Pending</span>
+                    <span class="status wait flex justify-start font-inter text-[1rem] italic font-medium  text-[#b5bdcd] pt-[0.375rem]">Waiting for
+                      <span class="text-[#436d7c]"> &nbsp;1 person</span>
+                      </span>
+                  </span>
+                  </td>
+                  <td class="date h-[4rem] w-[83.8%] flex flex-col justify-center">
+                    <span class="date1"> 10/22/2024 </span>
+                    <span class="time"> 2:01 pm </span>
+                  </td>
+                  <td class="action h-[4rem] w-[17%] relative">
+                    <button class="btn font-inter font-medium text-[0.875rem] text-[#626d82] w-[8.375rem] h-[2.125rem] border border-[#b5bdcd] rounded-[0.3125rem] bg-white cursor-pointer">Preview</button>
+                    <img class="w-[0.56rem] h-[1rem] absolute top-[40%] transform -translate-y-1/ right-[10%]" src="dot.svg" alt="Dots" />
+                  </td>
+                </tr>
+    
+                <tr class="data3 border-b-[0.0625rem] border-solid border-[#e8ecf1] h-[4rem]">
+                  <td class="items-center p-[1.15rem]">
+                    <input type="checkbox" name="checkdata" class="ch h-[1.0625rem] w-[1.0625rem] pl-[1.75rem] border-[0.093rem] border-solid border-[#bababa] bg-white" />
+                  </td>
+                  <td class="dn font-spline font-semibold text-[1rem] text-[#436d7c]">Title of Document Goes Here</td>
+                  <td>
+                    <span class="status pend font-inter text-[15px] font-medium text-center leading-[18.15px] text-[#626d82] w-[85px] h-[26px] rounded-[22px] bg-[#e8ecf1] flex items-center justify-center">Pending</span>
+                    <span class="status wait flex justify-start font-inter text-[1rem] italic font-medium  text-[#b5bdcd] pt-[0.375rem]">Waiting for
+                      <span class="text-[#436d7c]">&nbsp;2 persons</span>
+                      </span>
+                  </td>
+                  <td class="date h-[4rem] w-[83.8%] flex flex-col justify-center">
+                    <span class="date1"> 10/22/2024 </span>
+                    <span class="time"> 2:01 pm </span>
+                  </td>
+                  <td class="action h-[4rem] w-[17%] relative">
+                    <button class="btn font-inter font-medium text-[0.875rem] text-[#626d82] w-[8.375rem] h-[2.125rem] border border-[#b5bdcd] rounded-[0.3125rem] bg-white cursor-pointer">Preview</button>
+                    <img class="w-[0.56rem] h-[1rem] absolute top-[40%] transform -translate-y-1/ right-[10%]" src="dot.svg" alt="Dots" />
+                  </td>
+                </tr>
+    
+                <tr class="data4 border-b-[0.0625rem] border-solid border-[#e8ecf1] h-[4rem]">
+                  <td class="items-center p-[1.15rem]">
+                    <input type="checkbox" name="checkdata" class="ch h-[1.0625rem] w-[1.0625rem] pl-[1.75rem] border-[0.093rem] border-solid border-[#bababa] bg-white" />
+                  </td>
+                  <td class="dn font-spline font-semibold text-[1rem] text-[#436d7c]">Title of Document Goes Here</td>
+                  <td>
+                    <span class="status comp flex justify-start font-inter text-[1rem] w-[44.3%] h-[28%] rounded-[1.375rem] py-[3.5px] px-[10.56px] pl-[10.66px] text-[#1f4451] bg-[#d3f7b5]">Completed</span>
+                  </td>
+                  <td class="date h-[4rem] w-[83.8%] flex flex-col justify-center">
+                    <span class="date1">10/22/2024</span>
+                    <span class="time">2:01 pm</span>
+                  </td>
+                  <td class="action h-[4rem] w-[17%] relative">
+                    <button class="btn font-inter font-medium text-[0.875rem] text-[#626d82] w-[8.375rem] h-[2.125rem] border border-[#b5bdcd] rounded-[0.3125rem] bg-white cursor-pointer">Download PDF</button>
+                    <img class="w-[0.56rem] h-[1rem] absolute top-[40%] transform -translate-y-1/ right-[10%]" src="dot.svg" alt="Dots" />
+                  </td>
+                </tr>
+    
+                <tr class="data5 border-b-[0.0625rem] border-solid border-[#e8ecf1] h-[4rem]">
+                  <td class="items-center p-[1.15rem]">
+                    <input type="checkbox" name="checkdata" class="ch h-[1.0625rem] w-[1.0625rem] pl-[1.75rem] border-[0.093rem] border-solid border-[#bababa] bg-white" />
+                  </td>
+                  <td class="dn font-spline font-semibold text-[1rem] text-[#436d7c]">Title of Document Goes Here</td>
+                  <td>
+                    <span class="status comp flex justify-start font-inter text-[1rem] w-[44.3%] h-[28%] rounded-[1.375rem] py-[3.5px] px-[10.56px] pl-[10.66px] text-[#1f4451] bg-[#d3f7b5]">Completed</span>
+                  </td>
+                  <td class="date h-[4rem] w-[83.8%] flex flex-col justify-center">
+                    <span class="date1">10/22/2024</span>
+                    <span class="time">2:01 pm</span>
+                  </td>
+                  <td class="action h-[4rem] w-[17%] relative">
+                    <button class="btn font-inter font-medium text-[0.875rem] text-[#626d82] w-[8.375rem] h-[2.125rem] border border-[#b5bdcd] rounded-[0.3125rem] bg-white cursor-pointer">Download PDF</button>
+                    <img class="w-[0.56rem] h-[1rem] absolute top-[40%] transform -translate-y-1/ right-[10%]" src="dot.svg" alt="Dots" />
+                  </td>
+                </tr>
+    
+                <tr class="data6 border-b-[0.0625rem] border-solid border-[#e8ecf1] h-[4rem]">
+                  <td class="items-center p-[1.15rem]">
+                    <input type="checkbox" name="checkdata" class="ch h-[1.0625rem] w-[1.0625rem] pl-[1.75rem] border-[0.093rem] border-solid border-[#bababa] bg-white" />
+                  </td>
+                  <td class="dn font-spline font-semibold text-[1rem] text-[#436d7c]">Title of Document Goes Here</td>
+                  <td>
+                    <span class="status comp flex justify-start font-inter text-[1rem] w-[44.3%] h-[28%] rounded-[1.375rem] py-[3.5px] px-[10.56px] pl-[10.66px] text-[#1f4451] bg-[#d3f7b5]">Completed</span>
+                  </td>
+                  <td class="date h-[4rem] w-[83.8%] flex flex-col justify-center">
+                    <span class="date1">10/22/2024</span>
+                    <span class="time">2:01 pm</span>
+                  </td>
+                  <td class="action h-[4rem] w-[17%] relative">
+                    <button class="btn font-inter font-medium text-[0.875rem] text-[#626d82] w-[8.375rem] h-[2.125rem] border border-[#b5bdcd] rounded-[0.3125rem] bg-white cursor-pointer">Download PDF</button>
+                    <img class="w-[0.56rem] h-[1rem] absolute top-[40%] transform -translate-y-1/ right-[10%]" src="dot.svg" alt="Dots" />
+                  </td>
+                </tr>
+              </table>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </body>
-</html>
+    </body>
+  </html>
